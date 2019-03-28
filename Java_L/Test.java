@@ -5,7 +5,7 @@ public class Test{
         age = age + 7;
         System.out.println("Puppy age is :" + age);
     }
-	
+
 	public void testLoop(){
 		int x = 10;
 		while(x < 20){
@@ -14,7 +14,7 @@ public class Test{
 			System.out.print("\n");
 		}
 	}
-	
+
 	public void testLoop_2(){
 		int x = 0;
 		do{
@@ -29,7 +29,7 @@ public class Test{
 			System.out.print("value of x : " + x + "\n");
 		}
 	}
-	
+
 	public void testNewLoop(){
 		int[] numbers = {10,20,30,40,50};
 		for(int x : numbers){
@@ -53,7 +53,7 @@ public class Test{
 			System.out.print(x);
 			System.out.print("\n");
 		}
-	}	
+	}
 
 	public void testInBox(){
 		Integer x = 5;		// boxes int to an Integer object
@@ -69,6 +69,12 @@ public class Test{
 		//System.out.print("\n");
 	}
 
+    public void newStringBuffer(){
+        StringBuffer sBuffer = new StringBuffer(" test");
+        sBuffer.append(" String Buffer");
+        System.out.println(sBuffer);
+    }
+
     public static void main(String args[]){
         Test test = new Test();
 
@@ -79,6 +85,7 @@ public class Test{
 		//test.testNewLoop();
 		//test.testContinue();
 		//test.testInBox();
-		test.testNumber_Math_Method();
+		//test.testNumber_Math_Method();
+        test.newStringBuffer();
     }
 }
