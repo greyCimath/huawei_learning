@@ -1,29 +1,27 @@
-import java.io.*;
 public class Employee{
-    String name;
-    int age;
-    String designation;
-    double salary;
+    private String name;
+    private String address;
+    private int number;
 
-    // Employee class
-    public Employee(String name){
+    public Employee(String name,String address,int num){
+        System.out.println("Constructing an Employee");
         this.name = name;
+        this.address = address;
+        this.number = number;
     }
-    public void empAge(int empAge){
-        age = empAge;
+    public void mailCheck(){
+        System.out.println("Mailing a check to " + this.name + " " + this.address);
     }
-    public void empDesignation(String empDesig){
-        designation = empDesig;
+    public String toString(){
+        return name + " " + address + " " + number;
     }
-    public void empSalary(double empSalary){
-        salary = empSalary;
+    public String getName(){
+        return name;
     }
-
-    // Print Employee information
-    public void printEmployee(){
-    System.out.println("Name:" + name);
-    System.out.println("Age:" + age);
-    System.out.println("Designation:" + designation);
-    System.out.println("Salary:" + salary);
+    public String getAddress(){
+        return address;
+    }
+    public int getNumber(){
+        return number;
     }
 }
